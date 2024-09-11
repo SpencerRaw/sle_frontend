@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Records</title>
+    <link rel="stylesheet" href="id.css"> <!-- 可以自定义样式 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+</head>
+<body>
+    <!-- <nav aria-label="breadcrumb"></nav>
+        <ol id="breadcrumb" class="breadcrumb"></ol>
+    </nav> -->
+    <div id="sidebar">
+        <nav aria-label="breadcrumb">
+            <ol id="breadcrumb" class="breadcrumb"></ol>
+        </nav>
+    </div>
+    <i id="sidebar-toggle" class="fas fa-bars"></i>
+    <header>
+        <h1>欢迎，<span id="user-name"></span></h1>
+        <p>这是您的个人主页。</p>
+        <button class="cta-button" id="logout-button">退出登录</button>
+    </header>
+
+    <h1>问诊记录</h1>
+
+    <input type="text" id="search-input" placeholder="搜索患者姓名">
+
+    <!-- <input type="text" id="search-input" placeholder="输入患者姓名搜索">
+    <button id="search-btn">搜索</button> -->
+
+
+    <!-- 按钮创建新记录 -->
+    <input type="text" id="patient-name-input" placeholder="请输入新患者姓名">
+    <div class="center-container">
+    <button class="cta-button" id="add-record-btn">添加新记录</button>
+    </div>
+    <!-- 卡片容器 -->
+    <div id="records-container"></div>
+
+    <!-- 引入JavaScript -->
+    <script src="id.js"></script>
+</body>
+</html>

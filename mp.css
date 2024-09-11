@@ -1,0 +1,152 @@
+/* 通用样式 */
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+} */
+
+/* header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+} */
+
+/* h1 {
+    margin: 0;
+} */
+
+/* p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+} */
+
+/* #auth-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+} */
+
+/* #login-form, #register-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+} */
+
+/* h2 {
+    text-align: center;
+} */
+
+/* input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+} */
+
+/* button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+
+/* button:hover {
+    background-color: #45a049;
+} */
+
+/* 项目介绍 */
+/* #project-intro {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+/* .breadcrumb {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    padding: 10px 0;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+} */
+
+/* .breadcrumb-item {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+    pointer-events: none;
+} */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #4CAF50;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+/* 登录/注册按钮样式 */
+.toggle-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#login-toggle:checked ~ #login-form,
+#register-toggle:checked ~ #register-form {
+    display: block;
+}
+
+#login-toggle:checked ~ #register-form,
+#register-toggle:checked ~ #login-form {
+    display: none;
+}
+
+.form-content {
+    display: none;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+    visibility: hidden;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+

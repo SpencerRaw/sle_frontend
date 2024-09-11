@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLEai 诊断</title>
+    <link rel="stylesheet" href="mp2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+</head>
+<body>
+    <!-- <nav aria-label="breadcrumb">
+        <ol id="breadcrumb" class="breadcrumb"></ol>
+    </nav> -->
+
+    <div id="sidebar">
+        <nav aria-label="breadcrumb">
+            <ol id="breadcrumb" class="breadcrumb"></ol>
+        </nav>
+    </div>
+
+    <i id="sidebar-toggle" class="fas fa-bars"></i>
+
+    <header>
+        <!-- <h1>欢迎来到 SLE ai 诊断平台</h1> -->
+        <!-- <p>通过AI技术帮助医生进行系统性红斑狼疮 (SLE) 诊断</p> -->
+        <h1>欢迎来到 <span>SLE AI</span> 诊断平台</h1>
+        <p>通过AI技术帮助医生进行系统性红斑狼疮 (SLE) 诊断</p>
+        <div class="auth-buttons">
+            <button class="cta-button" id="login-btn">登录</button>
+            <button class="cta-button" id="register-btn">注册</button>
+        </div>
+    </header>
+
+    <!-- 登录弹窗 -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-login">&times;</span>
+        <h2>登录</h2>
+        <form id="login">
+            <input type="text" id="login-phone" placeholder="手机号" required><br>
+            <input type="password" id="login-password" placeholder="密码" required><br>
+            <button type="submit">登录</button>
+        </form>
+    </div>
+</div>
+
+<!-- 注册弹窗 -->
+<div id="register-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-register">&times;</span>
+        <h2>注册</h2>
+        <form id="register">
+            <input type="text" id="register-name" placeholder="姓名" required><br>
+            <input type="text" id="register-phone" placeholder="手机号" required><br>
+            <input type="password" id="register-password" placeholder="密码" required><br>
+            <button type="submit">注册</button>
+        </form>
+    </div>
+</div>
+
+
+    <!-- <section id="auth-section">
+        <div>
+            <input type="radio" name="toggle" id="login-toggle" hidden checked>
+            <label for="login-toggle" class="toggle-button">登录</label>
+    
+            <input type="radio" name="toggle" id="register-toggle" hidden>
+            <label for="register-toggle" class="toggle-button">注册</label>
+    
+            登录表单
+            <div id="login-form" class="form-content">
+                <h2>登录</h2>
+                <form id="login">
+                    <input type="text" id="login-phone" placeholder="手机号" required><br>
+                    <input type="password" id="login-password" placeholder="密码" required><br>
+                    <button type="submit">登录</button>
+                </form>
+            </div>
+    
+            注册表单
+            <div id="register-form" class="form-content">
+                <h2>注册</h2>
+                <form id="register">
+                    <input type="text" id="register-name" placeholder="姓名" required><br>
+                    <input type="text" id="register-phone" placeholder="手机号" required><br>
+                    <input type="password" id="register-password" placeholder="密码" required><br>
+                    <button type="submit">注册</button>
+                </form>
+            </div>
+        </div>
+    </section> -->
+    
+
+    <!-- <section id="auth-section">
+        
+        <div id="login-form">
+            <h2>登录</h2>
+            <form id="login">
+                <input type="text" id="login-phone" placeholder="手机号" required><br>
+                <input type="password" id="login-password" placeholder="密码" required><br>
+                <button type="submit">登录</button>
+            </form>
+        </div>
+
+        
+        <div id="register-form">
+            <h2>注册</h2>
+            <form id="register">
+                <input type="text" id="register-name" placeholder="姓名" required><br>
+                <input type="text" id="register-phone" placeholder="手机号" required><br>
+                <input type="password" id="register-password" placeholder="密码" required><br>
+                <button type="submit">注册</button>
+            </form>
+        </div>
+    </section> -->
+
+    <!-- 项目介绍 -->
+    <!-- <section id="project-intro">
+        <h2>关于 SLEai 诊断</h2>
+        <p>我们使用先进的AI算法来帮助医生更好地进行系统性红斑狼疮（SLE）的诊断。通过我们的平台，医生可以获得准确的诊断结果，并根据患者的病情提供个性化治疗建议。</p>
+    </section> -->
+    <img src="hai.png" alt="右下角的图片" class="bottom-right-image">
+
+    <script src="mp.js"></script>
+</body>
+</html>

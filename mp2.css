@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007BFF; /* 蓝色主色调 */
+}
+
+h1 span {
+    background-color: #FFD700; /* 用黄色突出强调 */
+    padding: 0 10px;
+}
+
+p {
+    font-size: 1.25rem;
+    color: #555;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+/* 父容器的样式 */
+.auth-buttons {
+    display: flex; /* 让子元素水平排列 */
+    justify-content: center; /* 水平居中 */
+    gap: 20px; /* 按钮之间的间距 */
+    margin-top: 20px; /* 给父容器一些上边距 */
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* 弹窗样式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+} */
+
+/* 弹出框样式 */
+.modal-content {
+    width: 80%; /* 弹出框宽度为屏幕的 80% */
+    background-color: white;
+    border-radius: 10px;
+    max-width: 500px; /* 设置弹出框的最大宽度，避免在大屏幕上过宽 */
+    padding: 20px; /* 设置内边距 */
+    margin: auto; /* 保证弹出框居中 */
+    box-sizing: border-box; /* 包含内边距和边框计算宽度 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 输入框样式 */
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+    width: 100%; /* 让输入框占满父容器的宽度 */
+    padding: 10px; /* 内边距使得输入框美观 */
+    margin: 10px 0; /* 输入框上下间距 */
+    box-sizing: border-box; /* 保证内边距不影响宽度 */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+} */
+button {
+    width: auto; /* 自动根据内容调整宽度 */
+    max-width: 200px; /* 设置按钮的最大宽度，防止拉伸过长 */
+    padding: 10px 20px; /* 调整按钮的内边距，确保按钮尺寸合适 */
+    margin: 10px auto; /* 水平居中 */
+    display: block; /* 确保按钮居中对齐 */
+    background-color: #007bff; /* 按钮背景颜色 */
+    color: white; /* 按钮文本颜色 */
+    border: none;
+    border-radius: 5px; /* 圆角效果 */
+    cursor: pointer; /* 鼠标移入时显示为可点击的手势 */
+}
+
+button:hover {
+    background-color: #0056b3; /* 鼠标移入时按钮变色 */
+}
+/* 调整按钮之间的间距 */
+#login-btn {
+    margin-right: -5px; /* 调整靠近右侧 */
+}
+
+#register-btn {
+    margin-left: -5px; /* 调整靠近左侧 */
+}
+
+.bottom-right-image {
+    position: fixed;
+    right: 10px; /* 距离右边20px */
+    bottom: 10px; /* 距离下方20px */
+    width: 400px; /* 控制图片的宽度 */
+    height: auto;
+}
+
+#sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* 初始为折叠状态 */
+    background-color: #e8e8e8;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+/* 打开 Sidebar */
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar .breadcrumb-item {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar .breadcrumb-item:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar toggle 图标 */
+#sidebar-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+.breadcrumb {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: black; /* 默认状态文字颜色为黑色 */
+    padding: 5px 10px;
+    transition: color 0.3s ease; /* 添加一个平滑的颜色变化过渡效果 */
+}
+
+.breadcrumb-item a:hover {
+    color: white; /* hover 时文字颜色变为白色 */
+    /* background-color: #0056b3; hover 时背景变黑，突出显示 */
+    border-radius: 5px;
+}
+
+/* .breadcrumb-item.active {
+    color: #0056b3; 
+    font-weight: bold;
+} */

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格填写页面</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <style>
+        /* 添加一些简单的样式 */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #submit-button {
+            display: block;
+            margin: 20px auto; /* 居中 */
+            padding: 10px 20px;
+            background-color: #007bff; /* 蓝色背景 */
+            color: white; /* 白色字体 */
+            border: none;
+            border-radius: 5px; /* 圆角 */
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #submit-button:hover {
+            background-color: #0056b3; /* hover 时颜色变化 */
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px; /* 输入框圆角 */
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus {
+            border-color: #007bff; /* 聚焦时边框颜色变化 */
+        }
+        .form-group .description {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+        .form-group .radio-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .form-group .radio-group label {
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group .radio-group input {
+            margin-right: 5px; /* 控制选框与文本的距离 */
+        }
+        #sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px; /* 初始为折叠状态 */
+            background-color: #e8e8e8;
+            color: white;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        /* 打开 Sidebar */
+        #sidebar.active {
+            left: 0;
+        }
+
+        #sidebar .breadcrumb-item {
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        #sidebar .breadcrumb-item:hover {
+            background-color: #0056b3;
+        }
+
+        /* Sidebar toggle 图标 */
+        #sidebar-toggle {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+        }
+        .breadcrumb {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .breadcrumb-item a {
+            text-decoration: none;
+            color: black; /* 默认状态文字颜色为黑色 */
+            padding: 5px 10px;
+            transition: color 0.3s ease; /* 添加一个平滑的颜色变化过渡效果 */
+        }
+
+        .breadcrumb-item a:hover {
+            color: white; /* hover 时文字颜色变为白色 */
+            /* background-color: #0056b3; hover 时背景变黑，突出显示 */
+            border-radius: 5px;
+        }
+                /* .breadcrumb {
+                    list-style: none;
+                    display: flex;
+                    gap: 5px;
+                    padding: 10px 0;
+                    background-color: #f8f9fa;
+                    border-radius: 5px;
+                }
+
+                .breadcrumb-item {
+                    color: #007bff;
+                    text-decoration: none;
+                }
+
+                .breadcrumb-item.active {
+                    color: #6c757d;
+                    pointer-events: none;
+                } */
+
+    </style>
+</head>
+<body>
+    <!-- <nav aria-label="breadcrumb"></nav>
+        <ol id="breadcrumb" class="breadcrumb"></ol>
+    </nav> -->
+    <div id="sidebar">
+        <nav aria-label="breadcrumb">
+            <ol id="breadcrumb" class="breadcrumb"></ol>
+        </nav>
+    </div>
+    <i id="sidebar-toggle" class="fas fa-bars"></i>
+
+    <h1 id="table-name">表格填写</h1>
+    <p id="table-description"></p>
+    <form id="feature-form">
+        <!-- 动态表单内容将在这里生成 -->
+    </form>
+
+    <!-- <button type="submit" form="feature-form">提交</button> -->
+    <button id="submit-button">提交</button>
+
+    <script src="form-fill.js"></script>
+</body>
+</html>

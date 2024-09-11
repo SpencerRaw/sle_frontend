@@ -1,0 +1,1465 @@
+{
+    "version": "1.0.0.0",
+    "features": [
+        {
+            "feature_id": 1,
+            "feature_name_en": "gender",
+            "feature_name_cn": "性别",
+            "feature_description": "性别(男-0 女-1)",
+            "feature_table": 1,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 2,
+            "feature_name_en": "age",
+            "feature_name_cn": "年龄",
+            "feature_description": "年龄 X（岁）",
+            "feature_table": 1,
+            "feature_class": "int",
+            "unit": "岁",
+            "score": null
+        },
+        {
+            "feature_id": 3,
+            "feature_name_en": "course",
+            "feature_name_cn": "病程",
+            "feature_description": "病程 XX天",
+            "feature_table": 1,
+            "feature_class": "int",
+            "unit": "天",
+            "score": null
+        },
+        {
+            "feature_id": 4,
+            "feature_name_en": "SBP",
+            "feature_name_cn": "收缩压",
+            "feature_description": "收缩压mmHg ",
+            "feature_table": 1,
+            "feature_class": "int",
+            "unit": "mmHg",
+            "score": null
+        },
+        {
+            "feature_id": 5,
+            "feature_name_en": "DBP",
+            "feature_name_cn": "舒缩压",
+            "feature_description": "舒缩压（mmHg）",
+            "feature_table": 1,
+            "feature_class": "int",
+            "unit": "mmHg",
+            "score": null
+        },
+        {
+            "feature_id": 6,
+            "feature_name_en": "weight",
+            "feature_name_cn": "体重",
+            "feature_description": "体重（Kg）",
+            "feature_table": 1,
+            "feature_class": "float",
+            "unit": "Kg",
+            "score": null
+        },
+        {
+            "feature_id": 7,
+            "feature_name_en": "height",
+            "feature_name_cn": "身高",
+            "feature_description": "身高（cm）",
+            "feature_table": 1,
+            "feature_class": "int",
+            "unit": "cm",
+            "score": null
+        },
+        {
+            "feature_id": 8,
+            "feature_name_en": "BMI",
+            "feature_name_cn": "BMI",
+            "feature_description": "BMI（Kg/M^2）",
+            "feature_table": 1,
+            "feature_class": "float",
+            "unit": "Kg/M^2",
+            "score": null
+        },
+        {
+            "feature_id": 9,
+            "feature_name_en": "facial_erythema",
+            "feature_name_cn": "面部红斑",
+            "feature_description": "面部红斑（有-1  无-0）（2分）",
+            "feature_table": 3,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 2
+        },
+        {
+            "feature_id": 10,
+            "feature_name_en": "Raynaud_phenomenon",
+            "feature_name_cn": "雷诺现象",
+            "feature_description": "雷诺现象（有-1  无-0）",
+            "feature_table": 3,
+            "feature_class":"bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 11,
+            "feature_name_en": "serosal_cavity_effusion",
+            "feature_name_cn": "浆膜腔积液",
+            "feature_description": "浆膜腔积液（有-1  无-0）（2分）",
+            "feature_table": 3,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 2
+        },
+        {
+            "feature_id": 12,
+            "feature_name_en": "fever",
+            "feature_name_cn": "发热",
+            "feature_description": "发热（有-1  无-0）（1分）",
+            "feature_table": 3,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 1
+        },
+        {
+            "feature_id": 13,
+            "feature_name_en": "oral_ulcers",
+            "feature_name_cn": "口腔溃疡",
+            "feature_description": "口腔溃疡（有-1  无-0）（2分）",
+            "feature_table": 3,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 2
+        },
+        {
+            "feature_id": 14,
+            "feature_name_en": "alopecia",
+            "feature_name_cn": "脱发",
+            "feature_description": "脱发（有-1  无-0）（2分）",
+            "feature_table": 3,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 2
+        },
+        {
+            "feature_id": 15,
+            "feature_name_en": "arthralgia",
+            "feature_name_cn": "关节疼痛",
+            "feature_description": "关节疼痛（有-1  无-0）（4分）",
+            "feature_table": 3,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 4
+        },
+        {
+            "feature_id": 16,
+            "feature_name_en": "acral_muscle_pain",
+            "feature_name_cn": "肢端肌肉疼痛_无力",
+            "feature_description": "肢端肌肉疼痛、无力（有-1  无-0）（4分）",
+            "feature_table": 3,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 4
+        },
+        {
+            "feature_id": 17,
+            "feature_name_en": "CVA",
+            "feature_name_cn": "新出现脑血管意外",
+            "feature_description": "新出现脑血管意外（有-1  无-0）（8分）",
+            "feature_table": 5,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 8
+        },
+        {
+            "feature_id": 18,
+            "feature_name_en": "lupus_headache",
+            "feature_name_cn": "狼疮头痛",
+            "feature_description": "狼疮头痛（有-1  无-0）",
+            "feature_table": 5,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 19,
+            "feature_name_en": "photosensitivity",
+            "feature_name_cn": "光过敏",
+            "feature_description": "光过敏（有-1  无-0）",
+            "feature_table": 3,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 20,
+            "feature_name_en": "edema",
+            "feature_name_cn": "水肿",
+            "feature_description": "水肿（有-1  无-0）",
+            "feature_table": 3,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 21,
+            "feature_name_en": "perinail_bed_infarction",
+            "feature_name_cn": "血管炎表现甲床周围梗死",
+            "feature_description": "血管炎表现（甲床周围梗死）（有-1  无-0）（8分）",
+            "feature_table": 5,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 8
+        },
+        {
+            "feature_id": 22,
+            "feature_name_en": "psychosis",
+            "feature_name_cn": "精神异常",
+            "feature_description": "精神异常（有-1  无-0）（8分）",
+            "feature_table": 5,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 8
+        },
+        {
+            "feature_id": 23,
+            "feature_name_en": "smoking",
+            "feature_name_cn": "吸烟",
+            "feature_description": "吸烟（有-1  无-0）",
+            "feature_table": 1,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 24,
+            "feature_name_en": "alcoholism",
+            "feature_name_cn": "酗酒",
+            "feature_description": "酗酒（有-1  无-0）",
+            "feature_table": 1,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 25,
+            "feature_name_en": "hypertension",
+            "feature_name_cn": "是否患有高血压病",
+            "feature_description": "是否患有高血压病（有-1  无-0）",
+            "feature_table": 2,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 26,
+            "feature_name_en": "diabetes",
+            "feature_name_cn": "是否患有糖尿病",
+            "feature_description": "是否患有糖尿病（有-1  无-0）",
+            "feature_table": 2,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 27,
+            "feature_name_en": "CAD",
+            "feature_name_cn": "冠心病",
+            "feature_description": "冠心病（有-1  无-0）",
+            "feature_table": 2,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 28,
+            "feature_name_en": "tumor",
+            "feature_name_cn": "肿瘤",
+            "feature_description": "肿瘤（有-1  无-0）",
+            "feature_table": 2,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 29,
+            "feature_name_en": "hepatitis_B",
+            "feature_name_cn": "乙肝",
+            "feature_description": "乙肝（有-1  无-0）",
+            "feature_table": 2,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 30,
+            "feature_name_en": "tuberculosis",
+            "feature_name_cn": "结核",
+            "feature_description": "是否患有结核（有-1  无-0）",
+            "feature_table": 2,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 31,
+            "feature_name_en": "interstitial_pulmonary_disease",
+            "feature_name_cn": "肺间质疾病病变",
+            "feature_description": "肺间质疾病病变（有-1  无-0）",
+            "feature_table": 5,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 32,
+            "feature_name_en": "intestinal_involvement",
+            "feature_name_cn": "肠道受累",
+            "feature_description": "肠道受累（有-1  无-0）",
+            "feature_table": 5,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 33,
+            "feature_name_en": "menstruation",
+            "feature_name_cn": "月经",
+            "feature_description": "月经 规律-1 不规律-2  绝经-3 男性-4",
+            "feature_table": 4,
+            "feature_class": "int",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 34,
+            "feature_name_en": "abortion",
+            "feature_name_cn": "流产",
+            "feature_description": "流产 有-1 无-2 男性-3",
+            "feature_table": 4,
+            "feature_class": "int",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 35,
+            "feature_name_en": "femoral_head_necrosis",
+            "feature_name_cn": "股骨头坏死",
+            "feature_description": "股骨头坏死（有-1  无-0）",
+            "feature_table": 5,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 36,
+            "feature_name_en": "osteoporosis",
+            "feature_name_cn": "骨质疏松",
+            "feature_description": "骨质疏松 （有-1  无-0）",
+            "feature_table": 5,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 37,
+            "feature_name_en": "impaired_vision",
+            "feature_name_cn": "视力受损",
+            "feature_description": "视力受损",
+            "feature_table": 5,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 38,
+            "feature_name_en": "hs_CRP",
+            "feature_name_cn": "超敏C反应蛋白",
+            "feature_description": "超敏C反应蛋白 mg/L",
+            "feature_table": 13,
+            "feature_class": "float",
+            "unit": "mg/L",
+            "score": null
+        },
+        {
+            "feature_id": 39,
+            "feature_name_en": "WBC",
+            "feature_name_cn": "白细胞计数",
+            "feature_description": "白细胞计数（10^9/L）（<3-1分）",
+            "feature_table": 7,
+            "feature_class": "float",
+            "unit": "10^9/L",
+            "score": 1
+        },
+        {
+            "feature_id": 40,
+            "feature_name_en": "RBC",
+            "feature_name_cn": "红细胞计数",
+            "feature_description": "红细胞计数  10^12/L",
+            "feature_table": 7,
+            "feature_class": "float",
+            "unit": "10^12/L",
+            "score": null
+        },
+        {
+            "feature_id": 41,
+            "feature_name_en": "hemoglobin",
+            "feature_name_cn": "血红蛋白",
+            "feature_description": "血红蛋白 g/L",
+            "feature_table": 7,
+            "feature_class": "float",
+            "unit": "g/L",
+            "score": null
+        },
+        {
+            "feature_id": 42,
+            "feature_name_en": "PLT",
+            "feature_name_cn": "血小板计数",
+            "feature_description": "血小板计数  10^9/L（<100 -1分）",
+            "feature_table": 7,
+            "feature_class": "float",
+            "unit": "10^9/L",
+            "score": 1
+        },
+        {
+            "feature_id": 43,
+            "feature_name_en": "ANC",
+            "feature_name_cn": "中性粒细胞计数",
+            "feature_description": "中性粒细胞计数 10^9/L",
+            "feature_table": 7,
+            "feature_class": "float",
+            "unit": "10^9/L",
+            "score": null
+        },
+        {
+            "feature_id": 44,
+            "feature_name_en": "ALC",
+            "feature_name_cn": "淋巴细胞计数",
+            "feature_description": "淋巴细胞计数 10^9/L",
+            "feature_table": 7,
+            "feature_class": "float",
+            "unit": "10^9/L",
+            "score": null
+        },
+        {
+            "feature_id": 45,
+            "feature_name_en": "TP",
+            "feature_name_cn": "总蛋白",
+            "feature_description": "总蛋白（g/L）",
+            "feature_table": 8,
+            "feature_class": "float",
+            "unit": "g/L",
+            "score": null
+        },
+        {
+            "feature_id": 46,
+            "feature_name_en": "albumin",
+            "feature_name_cn": "白蛋白",
+            "feature_description": "白蛋白（g/L）",
+            "feature_table": 8,
+            "feature_class": "float",
+            "unit": "g/L",
+            "score": null
+        },
+        {
+            "feature_id": 47,
+            "feature_name_en": "bilirubin_total",
+            "feature_name_cn": "总胆红素",
+            "feature_description": "总胆红素 μmol/L",
+            "feature_table": 8,
+            "feature_class": "float",
+            "unit": "μmol/L",
+            "score": null
+        },
+        {
+            "feature_id": 48,
+            "feature_name_en": "TBA",
+            "feature_name_cn": "总胆汁酸",
+            "feature_description": "总胆汁酸 μmol/L",
+            "feature_table": 8,
+            "feature_class": "float",
+            "unit": "μmol/L",
+            "score": null
+        },
+        {
+            "feature_id": 49,
+            "feature_name_en": "fibronectin",
+            "feature_name_cn": "纤维结合蛋白",
+            "feature_description": "纤维结合蛋白 mg/L",
+            "feature_table": 8,
+            "feature_class": "float",
+            "unit": "mg/L",
+            "score": null
+        },
+        {
+            "feature_id": 50,
+            "feature_name_en": "gamma_glutamyltransferase",
+            "feature_name_cn": "γ_谷丙酰基转肽酶",
+            "feature_description": "γ-谷丙酰基转肽酶（γ-GGT，U/L）",
+            "feature_table": 8,
+            "feature_class": "float",
+            "unit": "U/L",
+            "score": null
+        },
+        {
+            "feature_id": 51,
+            "feature_name_en": "ALT",
+            "feature_name_cn": "谷丙转氨酶",
+            "feature_description": "谷丙转氨酶（ALT，U/L）",
+            "feature_table": 8,
+            "feature_class": "float",
+            "unit": "ALT",
+            "score": null
+        },
+        {
+            "feature_id": 52,
+            "feature_name_en": "AST",
+            "feature_name_cn": "谷草转氨酶",
+            "feature_description": "谷草转氨酶（AST，U/L）",
+            "feature_table": 8,
+            "feature_class": "float",
+            "unit": "U/L",
+            "score": null
+        },
+        {
+            "feature_id": 53,
+            "feature_name_en": "LDH",
+            "feature_name_cn": "乳酸脱氢酶",
+            "feature_description": "乳酸脱氢酶U/L",
+            "feature_table": 12,
+            "feature_class": "float",
+            "unit": "U/L",
+            "score": null
+        },
+        {
+            "feature_id": 54,
+            "feature_name_en": "CK_MB",
+            "feature_name_cn": "肌酸激酶",
+            "feature_description": "肌酸激酶-MBng/L",
+            "feature_table": 12,
+            "feature_class": "float",
+            "unit": "ng/L",
+            "score": null
+        },
+        {
+            "feature_id": 55,
+            "feature_name_en": "CK",
+            "feature_name_cn": "肌酸激酶",
+            "feature_description": "肌酸激酶U/L",
+            "feature_table": 12,
+            "feature_class": "float",
+            "unit":"U/L",
+            "score": null
+        },
+        {
+            "feature_id": 56,
+            "feature_name_en": "d_3",
+            "feature_name_cn": "羟丁酸脱氢酶",
+            "feature_description": "羟丁酸脱氢酶U/L",
+            "feature_table": 12,
+            "feature_class": "float",
+            "unit": "U/L",
+            "score": null
+        },
+        {
+            "feature_id": 57,
+            "feature_name_en": "BUN",
+            "feature_name_cn": "尿素",
+            "feature_description": "尿素（BUN）（mmol/L）",
+            "feature_table": 9,
+            "feature_class": "float",
+            "unit": "mmol/L",
+            "score": null
+        },
+        {
+            "feature_id": 58,
+            "feature_name_en": "creatinine",
+            "feature_name_cn": "肌酐",
+            "feature_description": "肌酐 umol/l",
+            "feature_table": 9,
+            "feature_class": "float",
+            "unit": "umol/l",
+            "score": null
+        },
+        {
+            "feature_id": 59,
+            "feature_name_en": "uric_acid",
+            "feature_name_cn": "尿酸",
+            "feature_description": "尿酸   umol/L",
+            "feature_table": 9,
+            "feature_class": "float",
+            "unit": "umol/L",
+            "score": null
+        },
+        {
+            "feature_id": 60,
+            "feature_name_en": "cystatin_c",
+            "feature_name_cn": "胱抑素C",
+            "feature_description": "胱抑素C mg/L",
+            "feature_table": 9,
+            "feature_class": "float",
+            "unit": "mg/L",
+            "score": null
+        },
+        {
+            "feature_id": 61,
+            "feature_name_en": "RBP",
+            "feature_name_cn": "视黄醇结合蛋白",
+            "feature_description": "视黄醇结合蛋白  mg/L",
+            "feature_table": 20,
+            "feature_class": "float",
+            "unit": "mg/L",
+            "score": null
+        },
+        {
+            "feature_id": 62,
+            "feature_name_en": "blood_glucose",
+            "feature_name_cn": "血糖",
+            "feature_description": "血糖（mmol/L）",
+            "feature_table": 11,
+            "feature_class": "float",
+            "unit": "mmol/L",
+            "score": null
+        },
+        {
+            "feature_id": 63,
+            "feature_name_en": "TG",
+            "feature_name_cn": "甘油三酯",
+            "feature_description": "甘油三酯（TG, mmol/L）",
+            "feature_table": 10,
+            "feature_class": "float",
+            "unit": "mmol/L",
+            "score": null
+        },
+        {
+            "feature_id": 64,
+            "feature_name_en": "TC",
+            "feature_name_cn": "总胆固醇",
+            "feature_description": "总胆固醇  mmol/L",
+            "feature_table": 10,
+            "feature_class": "float",
+            "unit": "mmol/L",
+            "score": null
+        },
+        {
+            "feature_id": 65,
+            "feature_name_en": "HDL_C",
+            "feature_name_cn": "血高密度脂蛋白胆固醇",
+            "feature_description": "血高密度脂蛋白胆固醇（HDL-C）(mmol/L)",
+            "feature_table": 10,
+            "feature_class": "float",
+            "unit": "mmol/L",
+            "score": null
+        },
+        {
+            "feature_id": 66,
+            "feature_name_en": "LDL_C",
+            "feature_name_cn": "血低密度脂蛋白胆固醇",
+            "feature_description": "血低密度脂蛋白胆固醇（LDL-C）(mmol/L)",
+            "feature_table": 10,
+            "feature_class": "float",
+            "unit": "mmol/L",
+            "score": null
+        },
+        {
+            "feature_id": 67,
+            "feature_name_en": "homocysteine",
+            "feature_name_cn": "同型半胱氨酸",
+            "feature_description": "同型半胱氨酸 μmol/L",
+            "feature_table": 10,
+            "feature_class": "float",
+            "unit": "μmol/L",
+            "score": null
+        },
+        {
+            "feature_id": 68,
+            "feature_name_en": "ApoE",
+            "feature_name_cn": "载脂蛋白E",
+            "feature_description": "载脂蛋白E mg/L",
+            "feature_table": 10,
+            "feature_class": "float",
+            "unit": "mg/L",
+            "score": null
+        },
+        {
+            "feature_id": 69,
+            "feature_name_en": "ASO",
+            "feature_name_cn": "ASO",
+            "feature_description": "ASO IU/L",
+            "feature_table": 13,
+            "feature_class": "float",
+            "unit": "IU/L",
+            "score": null
+        },
+        {
+            "feature_id": 70,
+            "feature_name_en": "RF",
+            "feature_name_cn": "类风湿因子",
+            "feature_description": "类风湿因子（RF）IU/L",
+            "feature_table": 14,
+            "feature_class": "float",
+            "unit": "IU/L",
+            "score": null
+        },
+        {
+            "feature_id": 71,
+            "feature_name_en": "CRP",
+            "feature_name_cn": "C反应蛋白",
+            "feature_description": "CRP （C反应蛋白）mg/L",
+            "feature_table": 13,
+            "feature_class": "float",
+            "unit": "mg/L",
+            "score": null
+        },
+        {
+            "feature_id": 72,
+            "feature_name_en": "anti_cpp",
+            "feature_name_cn": "抗环瓜胺酸肽抗体",
+            "feature_description": "抗环瓜胺酸肽抗体（抗CCP）",
+            "feature_table": 14,
+            "feature_class": "float",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 73,
+            "feature_name_en": "IgA",
+            "feature_name_cn": "血清免疫球蛋白IgA",
+            "feature_description": "血清免疫球蛋白 IgA（g/L)",
+            "feature_table": 14,
+            "feature_class": "float",
+            "unit": "g/L",
+            "score": null
+        },
+        {
+            "feature_id": 74,
+            "feature_name_en": "IgM",
+            "feature_name_cn": "血清免疫球蛋白IgM",
+            "feature_description": "血清免疫球蛋白 IgM（g/L)",
+            "feature_table": 14,
+            "feature_class": "float",
+            "unit": "g/L",
+            "score": null
+        },
+        {
+            "feature_id": 75,
+            "feature_name_en": "IgG",
+            "feature_name_cn": "血清免疫球蛋白IgG",
+            "feature_description": "血清免疫球蛋白 IgG（g/L)",
+            "feature_table": 14,
+            "feature_class": "float",
+            "unit": "g/L",
+            "score": null
+        },
+        {
+            "feature_id": 76,
+            "feature_name_en": "C3",
+            "feature_name_cn": "血清补体C3",
+            "feature_description": "血清补体C3  g/L（<0.9-2分）",
+            "feature_table": 14,
+            "feature_class": "float",
+            "unit": "g/L",
+            "score": 2
+        },
+        {
+            "feature_id": 77,
+            "feature_name_en": "C4",
+            "feature_name_cn": "血清补体C4",
+            "feature_description": "血清补体C4   g/L（<0.1-2分）",
+            "feature_table": 14,
+            "feature_class": "float",
+            "unit": "g/L",
+            "score": null
+        },
+        {
+            "feature_id": 78,
+            "feature_name_en": "C1q",
+            "feature_name_cn": "补体C1q",
+            "feature_description": "补体C1q g/L",
+            "feature_table": 14,
+            "feature_class": "float",
+            "unit": "g/L",
+            "score": null
+        },
+        {
+            "feature_id": 79,
+            "feature_name_en": "PT",
+            "feature_name_cn": "凝血酶原时间",
+            "feature_description": "凝血酶原时间(Sec)",
+            "feature_table": 15,
+            "feature_class": "float",
+            "unit": "Sec",
+            "score": null
+        },
+        {
+            "feature_id": 80,
+            "feature_name_en": "APTT",
+            "feature_name_cn": "活化部分凝血活酶时间",
+            "feature_description": "活化部分凝血活酶时间(Sec)",
+            "feature_table": 15,
+            "feature_class": "float",
+            "unit": "Sec",
+            "score": null
+        },
+        {
+            "feature_id": 81,
+            "feature_name_en": "FIB",
+            "feature_name_cn": "血浆纤维蛋白原测定",
+            "feature_description": "血浆纤维蛋白原测定  g/L",
+            "feature_table": 15,
+            "feature_class": "float",
+            "unit": "g/L",
+            "score": null
+        },
+        {
+            "feature_id": 82,
+            "feature_name_en": "prothrombin_time",
+            "feature_name_cn": "凝血酶时间",
+            "feature_description": "凝血酶时间(Sec)",
+            "feature_table": 15,
+            "feature_class": "float",
+            "unit": "Sec",
+            "score": null
+        },
+        {
+            "feature_id": 83,
+            "feature_name_en": "D_Dimer_HS",
+            "feature_name_cn": "D_二聚体HS",
+            "feature_description": "D-二聚体HS（D-Dimer HS）mg/L",
+            "feature_table": 15,
+            "feature_class": "float",
+            "unit": "mg/L",
+            "score": null
+        },
+        {
+            "feature_id": 84,
+            "feature_name_en": "esr",
+            "feature_name_cn": "血沉",
+            "feature_description": "血沉  mm/h",
+            "feature_table": 20,
+            "feature_class": "int",
+            "unit": "mm/h",
+            "score": null
+        },
+        {
+            "feature_id": 85,
+            "feature_name_en": "detection_of_urine_protein",
+            "feature_name_cn": "尿蛋白定性",
+            "feature_description": "尿蛋白定性 阴性-0 +-1 ++-2 +++3 ++++-4 （4分）",
+            "feature_table": 16,
+            "feature_class": "int",
+            "unit": null,
+            "score": 4
+        },
+        {
+            "feature_id": 86,
+            "feature_name_en": "bld",
+            "feature_name_cn": "尿潜血定性",
+            "feature_description": "尿潜血定性 阴性-0 +-1 ++-2 +++3 ++++-4（4分）",
+            "feature_table": 16,
+            "feature_class": "int",
+            "unit": null,
+            "score": 4
+        },
+        {
+            "feature_id": 87,
+            "feature_name_en": "pyuria",
+            "feature_name_cn": "脓尿",
+            "feature_description": "脓尿（有-1  无-0）（4分）",
+            "feature_table": 16,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 4
+        },
+        {
+            "feature_id": 88,
+            "feature_name_en": "urinary_casts",
+            "feature_name_cn": "管型尿",
+            "feature_description": "管型尿（有-1  无-0）（4分）",
+            "feature_table": 16,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 4
+        },
+        {
+            "feature_id": 89,
+            "feature_name_en": "24_hour_urine_protein",
+            "feature_name_cn": "24小时总尿蛋白",
+            "feature_description": "24小时总尿蛋白（mg）（>500--4分）",
+            "feature_table": 16,
+            "feature_class": "float",
+            "unit": "mg",
+            "score": 4
+        },
+        {
+            "feature_id": 90,
+            "feature_name_en": "kidney_biopsy",
+            "feature_name_cn": "肾活检分型",
+            "feature_description": "肾活检分型 未做-0 I-1 II-2 III-3 IV-4 V-5 VI-6",
+            "feature_table": 20,
+            "feature_class": "str",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 91,
+            "feature_name_en": "ANA",
+            "feature_name_cn": "ANA",
+            "feature_description": "ANA（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 92,
+            "feature_name_en": "ANA_titer",
+            "feature_name_cn": "ANA滴度",
+            "feature_description": "ANA滴度",
+            "feature_table": 14,
+            "feature_class": "str",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 93,
+            "feature_name_en": "ds_DNA",
+            "feature_name_cn": "ds_DNA",
+            "feature_description": "ds-DNA（有-1 无-0）（2分）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": 2
+        },
+        {
+            "feature_id": 94,
+            "feature_name_en": "ds_DNA_titer",
+            "feature_name_cn": "ds_DNA滴度",
+            "feature_description": "ds-DNA滴度",
+            "feature_table": 14,
+            "feature_class": "str",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 95,
+            "feature_name_en": "ds_DNA_q",
+            "feature_name_cn": "ds-DNA定量",
+            "feature_description": "ds-DNA（定量）",
+            "feature_table": 14,
+            "feature_class": "float",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 96,
+            "feature_name_en": "SM",
+            "feature_name_cn": "SM",
+            "feature_description": "SM（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 97,
+            "feature_name_en": "SSA",
+            "feature_name_cn": "SSA",
+            "feature_description": "SSA（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 98,
+            "feature_name_en": "SSB",
+            "feature_name_cn": "SSB",
+            "feature_description": "SSB（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 99,
+            "feature_name_en": "RO52",
+            "feature_name_cn": "RO52",
+            "feature_description": "RO52（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 100,
+            "feature_name_en": "SCL_70",
+            "feature_name_cn": "SCL_70",
+            "feature_description": "SCL-70（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 101,
+            "feature_name_en": "PM_SCL",
+            "feature_name_cn": "PM_SCL",
+            "feature_description": "PM-SCL（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 102,
+            "feature_name_en": "URNP",
+            "feature_name_cn": "URNP",
+            "feature_description": "URNP（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 103,
+            "feature_name_en": "nucleosome",
+            "feature_name_cn": "核小体",
+            "feature_description": "核小体（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 104,
+            "feature_name_en": "ANCA",
+            "feature_name_cn": "ANCA",
+            "feature_description": "ANCA（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 105,
+            "feature_name_en": "aPL",
+            "feature_name_cn": "抗心磷脂抗体",
+            "feature_description": "抗心磷脂抗体（IgA/IgM）（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 106,
+            "feature_name_en": "anti_beta_2GP",
+            "feature_name_cn": "抗beta2糖蛋白抗体",
+            "feature_description": "抗β2糖蛋白抗体（IgA/IgM）（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 107,
+            "feature_name_en": "LAC",
+            "feature_name_cn": "狼疮抗凝物",
+            "feature_description": "狼疮抗凝物（有-1 无-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 108,
+            "feature_name_en": "IAT",
+            "feature_name_cn": "直接间接抗人球蛋白试验",
+            "feature_description": "直接、间接抗人球蛋白试验（阳性-1 阴性-0）",
+            "feature_table": 14,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 109,
+            "feature_name_en": "SLEDAI_score",
+            "feature_name_cn": "SLEDAI评分",
+            "feature_description": "SLEDAI评分",
+            "feature_table": 19,
+            "feature_class": "int",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 110,
+            "feature_name_en": "hs_TN_I",
+            "feature_name_cn": "超敏肌钙蛋白I",
+            "feature_description": "超敏肌钙蛋白I(CTnI，ng/mL)",
+            "feature_table": 17,
+            "feature_class": "float",
+            "unit": "ng/mL",
+            "score": null
+        },
+        {
+            "feature_id": 111,
+            "feature_name_en": "MB",
+            "feature_name_cn": "肌红蛋白",
+            "feature_description": "肌红蛋白ng/mL",
+            "feature_table": 17,
+            "feature_class": "float",
+            "unit": "ng/mL",
+            "score": null
+        },
+        {
+            "feature_id": 112,
+            "feature_name_en": "ck_isoenzymes",
+            "feature_name_cn": "肌酸激酶同工酶",
+            "feature_description": "肌酸激酶同工酶ng/mL",
+            "feature_table": 17,
+            "feature_class": "float",
+            "unit": "ng/mL",
+            "score": null
+        },
+        {
+            "feature_id": 113,
+            "feature_name_en": "NT_pro_BNP",
+            "feature_name_cn": "NT_pro_BNP",
+            "feature_description": "NT pro-BNP：（pg/ml）",
+            "feature_table": 17,
+            "feature_class": "float",
+            "unit": "pg/ml",
+            "score": null
+        },
+        {
+            "feature_id": 114,
+            "feature_name_en": "FT3",
+            "feature_name_cn": "游离三碘甲状腺原氨酸",
+            "feature_description": "游离三碘甲状腺原氨酸 Pmol/L",
+            "feature_table": 18,
+            "feature_class": "float",
+            "unit": "Pmol/L",
+            "score": null
+        },
+        {
+            "feature_id": 115,
+            "feature_name_en": "T4",
+            "feature_name_cn": "游离甲状腺素",
+            "feature_description": "游离甲状腺素 Pmol/L",
+            "feature_table": 18,
+            "feature_class": "float",
+            "unit": "Pmol/L",
+            "score": null
+        },
+        {
+            "feature_id": 116,
+            "feature_name_en": "TSH",
+            "feature_name_cn": "促甲状腺激素",
+            "feature_description": "促甲状腺激素μIU/ml",
+            "feature_table": 18,
+            "feature_class": "float",
+            "unit": "μIU/ml",
+            "score": null
+        },
+        {
+            "feature_id": 117,
+            "feature_name_en": "arrhythmia",
+            "feature_name_cn": "心律失常",
+            "feature_description": "心律失常（有-1  无-0）",
+            "feature_table": 21,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 118,
+            "feature_name_en": "echocardiogram",
+            "feature_name_cn": "心脏超声异常",
+            "feature_description": "心脏超声异常（有-1  无-0）",
+            "feature_table": 21,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 119,
+            "feature_name_en": "pulmonary_hypertension",
+            "feature_name_cn": "肺动脉高压",
+            "feature_description": "肺动脉高压（有-1  无-0）",
+            "feature_table": 21,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 120,
+            "feature_name_en": "PA",
+            "feature_name_cn": "肺动脉内径",
+            "feature_description": "PA(肺动脉内径  mm)",
+            "feature_table": 21,
+            "feature_class": "int",
+            "unit": "mm",
+            "score": null
+        },
+        {
+            "feature_id": 121,
+            "feature_name_en": "LV",
+            "feature_name_cn": "左心室内径",
+            "feature_description": "LV（左心室内径 mm）",
+            "feature_table": 21,
+            "feature_class": "int",
+            "unit": "mm",
+            "score": null
+        },
+        {
+            "feature_id": 122,
+            "feature_name_en": "LVEF",
+            "feature_name_cn": "LVEF",
+            "feature_description": "LVEF(%)",
+            "feature_table": 21,
+            "feature_class": "int",
+            "unit": "%",
+            "score": null
+        },
+        {
+            "feature_id": 123,
+            "feature_name_en": "pleurisy",
+            "feature_name_cn": "胸膜炎",
+            "feature_description": "胸膜炎（有-1  无-0）",
+            "feature_table": 22,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 124,
+            "feature_name_en": "pericarditis",
+            "feature_name_cn": "心包炎（有-1  无-0）",
+            "feature_description": "心包炎（有-1  无-0）",
+            "feature_table": 29,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 125,
+            "feature_name_en": "abdominal_echo",
+            "feature_name_cn": "腹部B超异常（有-1  无-0）",
+            "feature_description": "腹部B超异常（有-1  无-0）",
+            "feature_table": 23,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 126,
+            "feature_name_en": "carotid_atheroselerosis",
+            "feature_name_cn": "颈部血管斑块（有-1 无-0）",
+            "feature_description": "颈部血管斑块（有-1 无-0）",
+            "feature_table": 24,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 127,
+            "feature_name_en": "intima_of_neck_blood_vessels",
+            "feature_name_cn": "颈部血管内膜增厚",
+            "feature_description": "颈部血管内膜增厚（有-1 无-0）",
+            "feature_table": 24,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 128,
+            "feature_name_en": "CT_MRI",
+            "feature_name_cn": "头颅CT_MRI有无异常",
+            "feature_description": "头颅CT/MRI有无异常（有-1 无-0）",
+            "feature_table": 25,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 129,
+            "feature_name_en": "thyroid_ultrasound",
+            "feature_name_cn": "甲状腺超声异常",
+            "feature_description": "甲状腺超声异常（有-1 无-0 ）",
+            "feature_table": 26,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 130,
+            "feature_name_en": "breast_ultrasound",
+            "feature_name_cn": "乳腺超声异常",
+            "feature_description": "乳腺超声异常（有-1 无-0）",
+            "feature_table": 27,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 131,
+            "feature_name_en": "IVUS",
+            "feature_name_cn": "下肢血管超声异常",
+            "feature_description": "下肢血管超声异常（有-1 无-0）",
+            "feature_table": 28,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 132,
+            "feature_name_en": "colonoscopy",
+            "feature_name_cn": "胃肠镜异常",
+            "feature_description": "胃肠镜异常（有-1 无-0）",
+            "feature_table": 23,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 133,
+            "feature_name_en": "CT",
+            "feature_name_cn": "胸部CT",
+            "feature_description": "胸部CT（有-1 无-0）",
+            "feature_table": 22,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 134,
+            "feature_name_en": "CQ",
+            "feature_name_cn": "羟氯喹",
+            "feature_description": "羟氯喹",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 135,
+            "feature_name_en": "methotrexate",
+            "feature_name_cn": "甲氨蝶呤",
+            "feature_description": "甲氨蝶呤",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 136,
+            "feature_name_en": "azathioprine",
+            "feature_name_cn": "硫唑嘌呤",
+            "feature_description": "硫唑嘌呤",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 137,
+            "feature_name_en": "leflunomide",
+            "feature_name_cn": "来氟米特",
+            "feature_description": "来氟米特",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 138,
+            "feature_name_en": "MMF",
+            "feature_name_cn": "吗替麦考酚酯",
+            "feature_description": "吗替麦考酚酯",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 139,
+            "feature_name_en": "cyclosporine",
+            "feature_name_cn": "环孢素",
+            "feature_description": "环孢素",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 140,
+            "feature_name_en": "tripterygium_wilfordii",
+            "feature_name_cn": "雷公藤",
+            "feature_description": "雷公藤",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 141,
+            "feature_name_en": "TGP",
+            "feature_name_cn": "白芍总苷",
+            "feature_description": "白芍总苷",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 142,
+            "feature_name_en": "thalidomide",
+            "feature_name_cn": "沙利度胺",
+            "feature_description": "沙利度胺",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 143,
+            "feature_name_en": "SASP",
+            "feature_name_cn": "柳氮磺胺嘧啶",
+            "feature_description": "柳氮磺胺嘧啶",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 144,
+            "feature_name_en": "cyclophosphamide",
+            "feature_name_cn": "环磷酰胺",
+            "feature_description": "环磷酰胺",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 145,
+            "feature_name_en": "steroid",
+            "feature_name_cn": "类固醇",
+            "feature_description": "类固醇",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        },
+        {
+            "feature_id": 146,
+            "feature_name_en": "FK506",
+            "feature_name_cn": "他克莫司",
+            "feature_description": "他克莫司",
+            "feature_table": 6,
+            "feature_class": "bool",
+            "unit": null,
+            "score": null
+        }
+    ]
+}

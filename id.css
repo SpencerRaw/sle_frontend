@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007BFF; /* 蓝色主色调 */
+    text-align: center;
+}
+
+h1 span {
+    background-color: #FFD700; /* 用黄色突出强调 */
+    padding: 0 10px;
+}
+
+p {
+    font-size: 1.25rem;
+    color: #555;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+.center-container {
+    display: grid;
+    place-items: center; /* 水平和垂直居中 */
+   
+}
+.cta-button {
+    /* text-align: center; */
+    /* display: flex; */
+    justify-content: center; /* 水平居中 */
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+#records-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.record-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 200px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.record-card button {
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.record-card button:hover {
+    background-color: #0056b3;
+}
+/* 
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    padding: 10px 0;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.breadcrumb-item {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+    pointer-events: none;
+} */
+#sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* 初始为折叠状态 */
+    background-color: #e8e8e8;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+/* 打开 Sidebar */
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar .breadcrumb-item {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar .breadcrumb-item:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar toggle 图标 */
+#sidebar-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+.breadcrumb {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: black; /* 默认状态文字颜色为黑色 */
+    padding: 5px 10px;
+    transition: color 0.3s ease; /* 添加一个平滑的颜色变化过渡效果 */
+}
+
+.breadcrumb-item a:hover {
+    color: white; /* hover 时文字颜色变为白色 */
+    /* background-color: #0056b3; hover 时背景变黑，突出显示 */
+    border-radius: 5px;
+}
+
+/* 搜索框样式 */
+#search-input {
+    width: 300px;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+#patient-name-input {
+    width: 300px;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+/* 卡片容器样式 */
+#records-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 每个记录卡片的样式 */
+.record-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.record-card:hover {
+    transform: translateY(-5px);
+}
+
+.record-card p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* 按钮样式 */
+.record-card button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.record-card button:hover {
+    background-color: #387dc7;
+}
+
+/* 删除按钮样式 */
+.record-card button:last-child {
+    background-color: #f44336;
+}
+
+.record-card button:last-child:hover {
+    background-color: #e53935;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户主页</title>
+    <link rel="stylesheet" href="myp.css">
+</head>
+<body>
+    <header>
+        <h1>欢迎，<span id="user-name"></span></h1>
+        <p>这是您的个人主页。</p>
+        <button id="logout-button">退出登录</button>
+    </header>
+
+    <script src="myp.js"></script>
+
+    <!-- <script>
+        // 获取URL中的user-id参数
+        const urlParams = new URLSearchParams(window.location.search);
+        const userId = urlParams.get('user-id');
+
+        // 显示用户ID
+        document.getElementById("user-id").innerText = userId;
+        document.getElementById("logout-button").addEventListener("click", function() {
+            // 这里可以清除任何会话相关信息（如JWT或token）
+            // 假设我们使用本地存储或cookie来存储登录状态
+            localStorage.removeItem('token');  // 假设你用token管理用户登录
+            alert("您已成功退出！");
+            window.location.href = "main-page.html";  // 跳转回主页面
+        });
+    </script> -->
+</body>
+</html>
